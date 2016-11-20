@@ -12,5 +12,5 @@ Funny halloween themed app for an upcoming project
 <p><code> git clone https://github.com/Kirkify/CommandHalloween.git cm-halloween </code></p>
 3. CD to the folder `cd cm-halloween`
 4. Run > `npm install` to install the project dependencies
-5. If you wanna install on an Android device or iOS device run > `ionic platform add android`
-6. Serve app to browser or device > `ionic serve` 
+5. If you wanna install on an Android device or iOS device run > `ionic platform add android` and/or `ionic platform add ios`
+6. Serve app to browser or device > `ionic serve`
