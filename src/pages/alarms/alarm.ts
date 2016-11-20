@@ -2,9 +2,6 @@ import { Component } from '@angular/core';
 
 import { NavController, AlertController } from 'ionic-angular';
 
-import { ItemDetailsPage } from '../item-details/item-details';
-
-
 @Component({
   templateUrl: 'alarm.html'
 })

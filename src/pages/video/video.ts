@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 
 import { Platform, NavController } from 'ionic-angular';
-import { VideoPlayer } from 'ionic-native';
 import { SpinnerDialog } from 'ionic-native';
 import { ToastController } from 'ionic-angular';
 
