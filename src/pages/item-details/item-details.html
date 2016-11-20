@@ -1,0 +1,77 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Pumpkin Analytics</ion-title>
+  </ion-navbar>
+    <ion-toolbar no-border-top>
+        <ion-segment [(ngModel)]="pet">
+            <ion-segment-button value="puppies">
+                Performance
+            </ion-segment-button>
+            <ion-segment-button value="kittens">
+                Sales
+            </ion-segment-button>
+            <ion-segment-button value="ducklings">
+                Investment
+            </ion-segment-button>
+        </ion-segment>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <div [ngSwitch]="pet">
+
+        <div *ngSwitchCase="'puppies'">
+            <ion-card class="orange">
+                <ion-card-header>
+                    Pumpkin Performance
+                </ion-card-header>
+                <ion-card-content>
+                    Let the power of Halloween charge up your broomstick as well as your soul. Let the full moon bring all good things into your life.
+                </ion-card-content>
+            </ion-card>
+            <img src="img/graph.jpg">
+            <img src="img/performance.png">
+        </div>
+
+        <ion-list *ngSwitchCase="'kittens'">
+            <ion-card class="dark-orange">
+                <ion-card-header>
+                    Pumpkin Sales
+                </ion-card-header>
+                <ion-card-content>
+                    Trick or treat, I think you’re sweet on Halloween and always. May it be dreadfully creepy and scary and a whole lot of fun. Happy Halloween.
+                </ion-card-content>
+            </ion-card>
+            <img src="img/pie.jpg">
+            <ion-card class="dark-orange">
+                <ion-card-header>
+                    Pumpkin Sales
+                </ion-card-header>
+                <ion-card-content>
+                    What I love most about Halloween is, I get to eat a lot of the candy my kids collect. Life is good. Halloween makes it better. Have a sweet one.
+                </ion-card-content>
+            </ion-card>
+        </ion-list>
+
+        <ion-list *ngSwitchCase="'ducklings'">
+            <ion-card class="bright-orange">
+                <ion-card-header>
+                    Pumpkin Investments
+                </ion-card-header>
+                <ion-card-content>
+                    Yarrrgh! Ye be a mighty fine pirate this Halloween…be sure to scour for plenty o’ plunder and take heed to the night!
+                </ion-card-content>
+            </ion-card>
+            <img src="img/sales.png">
+            <ion-card class="bright-orange">
+                <ion-card-header>
+                    Pumpkin Investments
+                </ion-card-header>
+                <ion-card-content>
+                    Hayrides, candy, costumes, and more…I am sure you’ll have a memorable Halloween that is sure to be a blast! Don’t eat too much candy, though…you better save some for me, too!
+                </ion-card-content>
+            </ion-card>
+
+        </ion-list>
+    </div>
+</ion-content>
